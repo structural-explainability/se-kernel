@@ -1,0 +1,56 @@
+# ============================================================
+# CITATION.cff (How to cite this project)
+# ============================================================
+
+# REQ.UNIVERSAL: Professional open projects SHOULD include this file.
+# USAGE: See https://citation-file-format.github.io/ for details.
+
+cff-version: "1.2.0"
+type: software
+
+title: "Structural Explainability Kernel"
+version: "0.1.0"
+date-released: "2026-04-22"
+
+authors:
+  - family-names: Case
+    given-names: Denise M.
+    orcid: "https://orcid.org/0000-0001-6165-7389"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+
+repository-code: "https://github.com/structural-explainability/se-kernel"
+url: "https://github.com/structural-explainability/se-kernel"
+
+license: MIT
+
+abstract: >
+  Invariant primitives and structural constants for the Structural
+  Explainability (SE) ecosystem. This repository defines canonical
+  identifier primitives, shared constants, reference structure,
+  and minimal invariants used by downstream SE repositories.
+
+keywords:
+  # identity
+  - structural-explainability
+  - kernel
+  - structural-primitives
+  - invariant-constraints
+  - shared-constants
+
+  # practices
+  - reproducible-systems
+  - declarative-specification
+  - software-architecture
+  - system-governance
+
+  # ecosystem
+  - python
+  - github
+  - open-source
+  - uv
+  - ruff
+  - pyright
+  - hatchling
+  - zensical
+
+message: "If you use this work, please cite it using the metadata in this file."

@@ -1,0 +1,69 @@
+# ============================================================
+# SE_MANIFEST.toml (Repository Declaration)
+# ============================================================
+
+schema = "se-manifest-2"
+
+# === Identity ===
+
+[meta]
+# WHY: Minimal metadata; versioned separately via Git tags
+name = "se-kernel"
+org = "structural-explainability"
+status = "active"
+version = "0.1.0"
+
+[repo]
+# WHY: Repo identity is defined structurally
+class = "kernel"
+summary = "Invariant primitives and structural constants for the SE ecosystem."
+
+# === Structural contract ===
+
+[depends]
+optional = []
+required = []
+
+[provides]
+# WHY: Explicit artifact ownership (core to this repository)
+artifacts = [
+  "identity-primitives",
+  "reference-structure",
+  "invariants",
+  "constants",
+]
+
+[scope]
+# WHY: Keep this tight and structural
+includes = [
+  "definition of canonical identifiers",
+  "definition of structural invariants",
+  "definition of shared constants",
+]
+
+excludes = [
+  "validation rules",
+  "repository orchestration",
+  "domain semantics",
+]
+
+[validation]
+entrypoint = "none"
+
+# === Behavior / governance ===
+
+[naming]
+# WHY: Declares expected repo-family naming convention
+pattern = "se-*"
+
+[governance]
+# WHY: Declares governing authority for this repository
+authority = "structural-explainability"
+
+# === External references ===
+
+[citation]
+cff = "CITATION.cff"
+
+[traceability]
+identifier_map = "none"

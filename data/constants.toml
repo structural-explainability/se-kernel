@@ -1,0 +1,71 @@
+# ============================================================
+# constants.toml (Shared structural constants)
+# ============================================================
+
+[meta]
+version = "0.1.0"
+status = "draft"
+
+[reserved.repo_classes]
+values = [
+  "constitution",
+  "kernel",
+  "admin",
+  "schema",
+  "mapping",
+  "adapter",
+  "profile",
+  "rules",
+  "policy",
+  "pilot",
+]
+
+[reserved.manifest_sections]
+values = [
+  "meta",
+  "repo",
+  "depends",
+  "provides",
+  "scope",
+  "validation",
+  "naming",
+  "governance",
+  "citation",
+  "traceability",
+]
+
+[reserved.common_fields]
+values = [
+  "name",
+  "org",
+  "status",
+  "version",
+  "class",
+  "summary",
+  "required",
+  "optional",
+  "artifacts",
+  "includes",
+  "excludes",
+  "entrypoint",
+  "pattern",
+  "authority",
+  "cff",
+  "identifier_map",
+]
+
+[reserved.status_values]
+values = [
+  "draft",
+  "active",
+  "deprecated",
+  "retired",
+]
+
+[base_types]
+identifier = "string"
+summary = "string"
+status = "string"
+pattern = "string"
+string_list = "list[string]"
+mapping_string_object = "dict[string, object]"

@@ -1,0 +1,66 @@
+# ============================================================
+# identifiers.toml (Canonical identifier primitives)
+# ============================================================
+
+[meta]
+version = "0.1.0"
+status = "draft"
+
+[global]
+# WHY: Kernel identifiers are structural, not semantic.
+character_set = "ascii-lower-hyphen"
+case = "lower"
+separator = "-"
+allow_unicode = false
+
+[kind.repo]
+summary = "Canonical repository identifier."
+pattern = "se-{name}"
+examples = ["se-constitution", "se-kernel", "se-admin"]
+
+[kind.artifact]
+summary = "Canonical artifact identifier."
+pattern = "{artifact-name}"
+examples = [
+  "class-registry",
+  "dependency-rules",
+  "naming-patterns",
+  "manifest-schema",
+  "repo-requirements",
+]
+
+[kind.class]
+summary = "Canonical repository class identifier."
+pattern = "{class-name}"
+examples = [
+  "constitution",
+  "kernel",
+  "admin",
+  "schema",
+  "mapping",
+  "adapter",
+  "profile",
+  "rules",
+  "policy",
+  "pilot",
+]
+
+[kind.field]
+summary = "Canonical field identifier."
+pattern = "{field-name}"
+examples = [
+  "meta",
+  "class",
+  "repo",
+  "depends",
+  "provides",
+  "scope",
+  "validation",
+]
+
+[rules]
+must_be_stable = true
+must_be_ascii = true
+must_be_lowercase = true
+must_use_hyphen_separator = true
+must_not_embed_semantics = true
