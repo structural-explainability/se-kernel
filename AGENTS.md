@@ -2,7 +2,6 @@
 
 ## Scope
 
-- This repository defines constitutional rules, schemas, and validation logic.
 - Changes must preserve:
   - determinism
   - cross-platform compatibility

@@ -89,7 +89,7 @@ uv run python -m zensical build
 
 # save progress
 git add -A
-git commit -m "update"
+git add -A
 git push -u origin main
 ```
 

@@ -4,7 +4,7 @@
 # WHY: Centralizes project documentation configuration.
 
 [project]
-site_name = "SE Constitution"
+site_name = "SE Kernel"
 site_url = "https://structural-explainability.github.io/se-kernel/"
 repo_url = "https://github.com/structural-explainability/se-kernel"
 repo_name = "structural-explainability/se-kernel"
