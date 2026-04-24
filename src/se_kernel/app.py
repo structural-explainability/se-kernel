@@ -1,4 +1,4 @@
-"""Application orchestration for se_kernel."""
+"""app.py - Application orchestration for se_kernel."""
 
 from pathlib import Path
 

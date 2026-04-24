@@ -1,4 +1,4 @@
-"""Minimal CLI smoke tests for se_kernel."""
+"""tests/test_cli.py - Minimal CLI smoke tests for se_kernel."""
 
 from se_kernel.app import run_show
 
