@@ -4,11 +4,11 @@
 
 schema = "se-manifest-2"
 
-# === Identity ===
+# === Repository Identity ===
 
 [meta]
 # WHY: Minimal metadata; versioned separately via Git tags
-name = "se-kernel"
+name = { repo = "se-kernel", kind = "semantic", version = "main" }
 org = "structural-explainability"
 status = "active"
 version = "0.1.0"
@@ -18,11 +18,13 @@ version = "0.1.0"
 class = "kernel"
 summary = "Invariant primitives and structural constants for the SE ecosystem."
 
-# === Structural contract ===
+# === Dependency Declarations ===
 
 [depends]
 optional = []
 required = []
+
+# === Provided Artifacts ===
 
 [provides]
 # WHY: Explicit artifact ownership (core to this repository)
@@ -32,6 +34,8 @@ artifacts = [
   "invariants",
   "constants",
 ]
+
+# === Scope ===
 
 [scope]
 # WHY: Keep this tight and structural
